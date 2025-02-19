@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Access</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Secure Access</h2>
+        <div id="auth-section">
+            <label for="passkey">Enter Passkey:</label>
+            <input type="password" id="passkey" placeholder="Enter passkey">
+            <button onclick="validatePasskey()">Submit</button>
+            
+            <div id="otp-section" style="display: none;">
+                <label for="otp">Enter OTP:</label>
+                <input type="text" id="otp" placeholder="Enter OTP">
+                <button onclick="validateOTP()">Verify</button>
+                <button onclick="generateOTP()">Resend OTP</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
